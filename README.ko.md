@@ -12,7 +12,21 @@
 
 Haiku OS (x86 또는 x86_64). 크로스 컴파일러가 필요 없으니 실행할 기기에서 그대로 빌드하시면 됩니다.
 
+arm64에서도 빌드되어 동작합니다. Haiku 키트만 사용하므로 그 밖의 의존성이 없어 크로스 컴파일로 만들었습니다.
+
 ## 설치
+
+### 패키지 저장소에서
+
+32비트 x86과 arm64용 패키지를 [pkgman.rainygirl.com](https://pkgman.rainygirl.com)에서 배포합니다. 아키텍처에 맞는 저장소를 추가한 뒤 설치하시면 됩니다.
+
+```sh
+pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2   # 32비트 x86
+pkgman add-repo https://pkgman.rainygirl.com/arm64      # arm64
+pkgman install rmarkdown
+```
+
+### 소스에서
 
 ```sh
 ./install.sh

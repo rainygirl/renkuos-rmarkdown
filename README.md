@@ -12,7 +12,21 @@ A Markdown editor that styles the text in place. The document stays plain Markdo
 
 Haiku OS (x86 or x86_64). Build it on the machine you are going to run it on — no cross-compiler needed.
 
+Also builds and runs on arm64, cross-compiled against the Haiku kits; it needs nothing outside them.
+
 ## Install
+
+### From the package repository
+
+32-bit x86 and arm64 packages are published at [pkgman.rainygirl.com](https://pkgman.rainygirl.com). Add the repository for your architecture and install:
+
+```sh
+pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2   # 32-bit x86
+pkgman add-repo https://pkgman.rainygirl.com/arm64      # arm64
+pkgman install rmarkdown
+```
+
+### From source
 
 ```sh
 ./install.sh
